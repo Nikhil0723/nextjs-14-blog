@@ -22,8 +22,6 @@ async function getData() {
 export default async function Home() {
   const data: simpleBlogCard[] = await getData();
 
-  console.log(data);
-
 
   return (
     <div className="grid grid-cols-1  md:grid-cols-2 mt-5 gap-5">
@@ -42,8 +40,8 @@ export default async function Home() {
           <p className="line-clamp-3 text-sm mt-2 text-gray-600 dark:text-gray-300">
             {post.smallDescription}
           </p>
-          <Button asChild className="w-full mt-7 bg-blue-500" variant="default">
-            <Link href={`/blog/${post.currentSlug}`}>Read More</Link>
+          <Button asChild className="w-full mt-7 bg-blue-500 text-white" variant="default">
+            <Link href={`/blog/${post.currentSlug}` }>Read More</Link>
           </Button>
         </CardContent>
       </Card>

@@ -45,8 +45,8 @@ export default async function BlogArticle({
         className="rounded-lg mt-8 border"
       />
 
-      <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary  ">
-        <PortableText value={data.content} />
+      <div className="mt-16  prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary  ">
+        <PortableText value={data.content}/>
       </div>
     </div>
   );

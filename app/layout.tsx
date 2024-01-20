@@ -21,10 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+             attribute="class"
+             defaultTheme="system"
+             enableSystem
+             disableTransitionOnChange
           >
             <Navbar/>
             <main className='max-w-2xl mx-auto'>
